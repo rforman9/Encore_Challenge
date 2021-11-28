@@ -2,7 +2,13 @@
 
 # flatten a nested array
 def flatten(array):
-    """recursively flattens each item in a potentially nested list and returns the result"""
+    """recursively flattens each item in a potentially nested list and returns the result
+        Parameters:
+            array (list): an arbitrarily nested array of integers
+
+        Returns:
+            (list) a flat array of integers
+    """
     print "Array: ", array
     # if list is empty return empty list
     if array == []:
