@@ -41,3 +41,11 @@ def test_mean():
     for item in SAMPLE_TEMPS:
         tracked.insert(item)
     assert tracked.get_mean() == 60
+
+
+def test_mean_is_float():
+    from rformanChallenge.rfClasses import TempTracker
+    tracked = TempTracker()
+    for item in SAMPLE_TEMPS:
+        tracked.insert(item)
+    assert isinstance(tracked.get_mean(), float)
